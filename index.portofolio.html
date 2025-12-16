@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portofolio pribadi versi sederhana dan estetik">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Portofolio: Agna Khoerunnisa">
+  <meta property="og:image" content="img/Agna.jpeg">
+
+  <title>Portofolio</title>
+<!-- Link Css-->
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1 id="site-header">AGNA KHOERUNNISA</h1>
+    </div>
+   
+  </header>
+
+  <nav aria-label="Navigasi utama">
+    <ul>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#pendidikan">Riwayat</a></li>
+      <li><a href="#skill">Skill</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#audio">Audio</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+      <li><a href="lat_css.html">CSS</a></li>
+      <li
+    </ul>
+  </nav>
+
+  <main>
+    <section id="profil" aria-labelledby="judul-profil">
+      <h2 id="judul-profil">Profil</h2>
+      <p></p>
+      <img src="img/Agna.jpeg" alt="Foto diri Agna Khoerunnisa" class="about-img">
+      <p tabindex="0">Haiii, perkenalkan saya Agna Khoerunnisa dari Rajapolah kota Tasikmalaya. Saat ini saya sedang menempuh pendidikan semester 1 di Universitas Mayasari Bakti kota Tasikmalaya, program studi Teknik Informatika.</p>
+    </section>
+
+    <section id="pendidikan" aria-labelledby="judul-pendidikan">
+      <h2 id="judul-pendidikan">Riwayat Pendidikan</h2>
+      <table>
+        <caption>Riwayat Pendidikan Agna Khoerunnisa</caption>
+        <thead>
+          <tr><th>Tahun</th><th>Keterangan</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><time datetime="2025">2025</time></td><td>Lulus SMKN Rajapolah</td></tr>
+          <tr><td colspan="2">Jurusan <abbr title="TKJ">Teknik Jaringan dan Komputer</abbr></td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2">Data diperbarui: <time datetime="2025-11-24">25 November 2025</time></td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="skill" aria-labelledby="judul-keahlian">
+      <h2 id="judul-keahlian">Keahlian</h2>
+      <ul>
+        <li>Menggambar</li>
+        <li>Instalasi dan konfigurasi jaringan</li>
+        <li>Kerja sama tim</li>
+      </ul>
+    </section>
+
+    <section id="video">
+      <h2>Karya</h2>
+      <p></p>
+      <img width="320" src="img/ppg3.jpeg" alt="Karya">
+    </section>
+    <section id="video">
+      <h2>Video Projek</h2>
+      <if frame
+            src="https://www.youtube.com/watch?v=iA8lLwmtKQM"
+            title="Youtube-vidio"
+            fra
+      <p></p>
+      <a href="https://www.youtube.com/watch?v=iA8lLwmtKQM" target="_blank">
+      <img src="https://img.youtube.com/vi/iA8lLwmtKQM/0.jpg"  width="320" height="180">
+  
+    </section>
+
+    <section id="audio">
+      <h2>Audio</h2>
+      <p></p>
+      <audio controls>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+      </audio>
+    </section>
+
+    <section id="kontak" aria-labelledby="judul-kontak">
+      <h2 id="judul-kontak">Form Kontak</h2>
+      <form aria-describedby="deskripsi-form" class="box-email">
+        <p id="deskripsi-form">Silakan isi formulir di bawah ini untuk menghubungi saya.</p>
+
+        <fieldset class="box-email">
+          <legend>Hubungi Saya</legend>
+
+          <label>Nama:<br>
+            <input type="text" name="nama" required minlength="3" maxlength="30">
+          </label><br><br>
+
+          <label>Email:<br>
+            <input type="email" name="email" required>
+          </label><br><br>
+
+          <label>Nomor HP:<br>
+            <input type="tel" name="nomor" required minlength="10" maxlength="15">
+          </label><br><br>
+
+          <label>Pesan:<br>
+            <textarea name="pesan" required minlength="5"></textarea>
+          </label><br><br>
+
+          <p>Jenis Kontak:</p>
+          <label><input type="radio" name="jenis" value="saran" required> Saran</label>
+          <label><input type="radio" name="jenis" value="pertanyaan"> Pertanyaan</label><br><br>
+
+          <label>
+            <input type="checkbox" name="setuju" required>
+            Saya menyetujui kebijakan privasi
+          </label><br><br>
+
+          <button type="submit">Kirim</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Belum paham itu wajar, yang penting jangan berhenti mencoba.
+</html>
