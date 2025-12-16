@@ -131,4 +131,23 @@
       color: white;
       padding: 1rem;
       margin-top: 2rem;
+
     }
+   .main-menu a {
+    display: block; 
+    padding: 10px 15px;
+    color: #ecf0f1;
+   }
+   .cta-button {
+    /* Gaya Visual */
+    background-color: #e74c3c; /* Warna Merah Kontras */
+    color: white;
+    font-weight: bold;
+    
+    /* Ukuran dan Bentuk */
+    padding: 8px 15px; /* Jarak di dalam tombol */
+    border-radius: 5px; /* Sudut membulat */
+    
+    /* Efek Hover */
+    transition: background-color 0.3s ease;
+   }
