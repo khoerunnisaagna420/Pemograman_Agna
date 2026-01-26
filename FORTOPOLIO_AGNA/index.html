@@ -2,14 +2,13 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Portofolio pribadi versi sederhana dan estetik">
+  <meta name="description" content="Portofolio pribadi versi estetik dengan animasi bunga jatuh">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:title" content="Portofolio: Agna Khoerunnisa">
-  <meta property="og:image" content="img/Agna.jpeg">
-  
-  <title>Portofolio</title>
+  <!-- Google Font untuk huruf bersambung -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <title>Portofolio Agna Khoerunnisa</title>
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -17,6 +16,7 @@
       padding: 0;
       background: linear-gradient(135deg, #ffe0f0, #fce4ec);
       color: #333;
+      overflow-x: hidden;
     }
 
     /* Header */
@@ -31,9 +31,9 @@
 
     .site-header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px #fff;
+      font-size: 3rem;
+      font-family: 'Great Vibes', cursive; /* huruf bersambung */
+      text-shadow: 0 0 10px rgba(255,182,193,0.5);
     }
 
     /* Navigasi */
@@ -66,15 +66,19 @@
     section {
       padding: 2rem;
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
       position: relative;
       z-index: 1;
+      background: rgba(255,255,255,0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     h2 {
       color: #6b4c6b;
       border-bottom: 2px solid #cbaacb;
       padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     /* Profil */
@@ -83,7 +87,7 @@
       border-radius: 50%;
       display: block;
       margin: 1rem auto;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 0 15px rgba(203,170,203,0.5);
     }
 
     /* Tabel pendidikan */
@@ -91,10 +95,8 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 1rem;
-    }
-
-    table, th, td {
-      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
     }
 
     th, td {
@@ -107,38 +109,51 @@
       color: white;
     }
 
+    tbody tr:nth-child(even) {
+      background-color: #fce4ec;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #fff;
+    }
+
     /* Form kontak */
     form {
-      background-color: #fff0f5;
+      background-color: #fff;
       padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     form label {
       font-weight: bold;
+      display: block;
+      margin-top: 1rem;
     }
 
     form input, form textarea {
       width: 100%;
-      padding: 0.5rem;
+      padding: 0.75rem;
       margin-top: 0.25rem;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 8px;
+      font-family: inherit;
     }
 
     button {
-      background-color: #cbaacb;
+      background: linear-gradient(90deg, #cbaacb, #f8c8dc);
       color: white;
       border: none;
       padding: 0.75rem 1.5rem;
-      border-radius: 4px;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: transform 0.2s, background 0.3s;
+      margin-top: 1rem;
     }
 
     button:hover {
-      background-color: #6b4c6b;
+      background: linear-gradient(90deg, #f8c8dc, #cbaacb);
+      transform: scale(1.05);
     }
 
     /* Footer */
@@ -150,6 +165,7 @@
       margin-top: 2rem;
       position: relative;
       z-index: 1;
+      border-radius: 0 0 12px 12px;
     }
 
     /* Animasi bunga jatuh */
@@ -189,8 +205,8 @@
     }
 
     @keyframes jatuh {
-      0% { top: -100px; transform: rotate(0deg); }
-      100% { top: 110vh; transform: rotate(360deg); }
+      from { top: -100px; transform: rotate(0deg); }
+      to { top: 110vh; transform: rotate(360deg); }
     }
   </style>
 </head>
@@ -214,7 +230,7 @@
   </div>
 
   <header class="site-header">
-    <h1>AGNA KHOERUNNISA</h1>
+    <h1>Agna Khoerunnisa</h1>
   </header>
 
   <nav>
@@ -232,28 +248,27 @@
   <main>
     <section id="profil">
       <h2>Profil</h2>
-      <img src="img/Agna.jpeg" alt="Foto diri Agna Khoerunnisa" class="about-img">
-      <p>Haiii, perkenalkan saya Agna Khoerunnisa dari Rajapolah kota Tasikmalaya. Saat ini saya sedang menempuh pendidikan semester 1 di Universitas Mayasari Bakti kota Tasikmalaya, program studi Teknik Informatika.</p>
+      <img src="IMG/Agna.jpeg" alt="Foto diri Agna Khoerunnisa" class="about-img">
+      <p>Haiii, perkenalkan saya Agna Khoerunnisa dari Rajapolah kota Tasikmalaya. Saat ini saya sedang menempuh pendidikan semester 1 di Universitas Mayasari Bakti kota Tasikmalaya, program studi Teknik Informatika</p>
     </section>
 
-    <section id="pendidikan">
-      <h2>Riwayat Pendidikan</h2>
+     <section id="pendidikan" aria-labelledby="judul-pendidikan">
+      <h2 id="judul-pendidikan">Riwayat Pendidikan</h2>
       <table>
-        <caption>Riwayat Pendidikan Agna Khoerunnisa</caption>
         <thead>
           <tr><th>Tahun</th><th>Keterangan</th></tr>
         </thead>
         <tbody>
           <tr><td><time datetime="2025">2025</time></td><td>Lulus SMKN Rajapolah</td></tr>
           <tr><td colspan="2">Jurusan <abbr title="TKJ">Teknik Jaringan dan Komputer</abbr></td></tr>
-        </tbody>
+        </tbody>c
         <tfoot>
           <tr><td colspan="2">Data diperbarui: <time datetime="2025-11-24">25 November 2025</time></td></tr>
         </tfoot>
       </table>
     </section>
 
-     <section id="skill" aria-labelledby="judul-keahlian">
+    <section id="skill" aria-labelledby="judul-keahlian">
       <h2 id="judul-keahlian">Keahlian</h2>
       <ul>
         <li>Menggambar</li>
@@ -262,31 +277,28 @@
       </ul>
     </section>
 
-    <section id="video">
-      <h2>Karya</h2>
-      <p></p>
-      <img width="320" src="img/ppg3.jpeg" alt="Karya">
-    </section>
-    <section id="video">
-      <h2>Video Projek</h2>
-      <if frame
-            src="https://www.youtube.com/watch?v=iA8lLwmtKQM"
-            title="Youtube-vidio"
-            frame></if>
-      <p></p>
-      <a href="https://www.youtube.com/watch?v=iA8lLwmtKQM" target="_blank">
-      <img src="https://img.youtube.com/vi/iA8lLwmtKQM/0.jpg"  width="320" height="180">
-  
-    </section>
+   <section id="video">
+  <h2>Video Projek</h2>
+  <!-- Embed YouTube dengan iframe -->
+  <iframe width="450" height="315" 
+          src="https://www.youtube.com/embed/t5LoCKicfbc" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+</section>
 
     <section id="audio">
-      <h2>Audio</h2>
-      <p></p>
-      <audio controls>
-        <source src="lagu.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung audio.
-      </audio>
-    </section>
+  <h2>Album Favorit di Spotify</h2>
+  <iframe style="border-radius:12px" 
+          src="https://open.spotify.com/embed/album/1E1Sg8OtAbUNUeq7kat4KP?utm_source=generator" 
+          width="100%" height="380" frameborder="0" 
+          allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+</section>
+
 
     <section id="kontak" aria-labelledby="judul-kontak">
       <h2 id="judul-kontak">Form Kontak</h2>
@@ -329,4 +341,8 @@
 
   <footer>
     <p>&copy; <time datetime="2025">2025</time> Belum paham itu wajar, yang penting jangan berhenti mencoba.
+
 </html>
+
+
+
