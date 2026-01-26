@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portofolio pribadi versi sederhana dan estetik">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Portofolio: Agna Khoerunnisa">
+  <meta property="og:image" content="img/Agna.jpeg">
+  
+  <title>Portofolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe0f0, #fce4ec);
+      color: #333;
+    }
+
+    /* Header */
+    .site-header {
+      background: linear-gradient(90deg, #cbaacb, #f8c8dc);
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .site-header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    /* Navigasi */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #f8c8dc;
+      position: relative;
+      z-index: 1;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 1rem 1.5rem;
+      color: #6b4c6b;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #cbaacb;
+      color: white;
+    }
+
+    /* Section umum */
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      color: #6b4c6b;
+      border-bottom: 2px solid #cbaacb;
+      padding-bottom: 0.5rem;
+    }
+
+    /* Profil */
+    .about-img {
+      width: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 1rem auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Tabel pendidikan */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    thead {
+      background-color: #cbaacb;
+      color: white;
+    }
+
+    /* Form kontak */
+    form {
+      background-color: #fff0f5;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    form label {
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #cbaacb;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #6b4c6b;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #cbaacb;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Animasi bunga jatuh */
+    .bunga {
+      position: fixed;
+      width: 100px;
+      height: 100px;
+      animation: jatuh 8s linear infinite;
+      z-index: 0;
+    }
+
+    .bunga:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .bunga:nth-child(2) { left: 30%; animation-delay: 2s; }
+    .bunga:nth-child(3) { left: 50%; animation-delay: 4s; }
+    .bunga:nth-child(4) { left: 70%; animation-delay: 6s; }
+    .bunga:nth-child(5) { left: 90%; animation-delay: 1s; }
+
+    .kelopak {
+      width: 40px;
+      height: 60px;
+      background: #f8c8dc;
+      border-radius: 50% 50% 0 0;
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      transform-origin: bottom center;
+    }
+
+    .tengah {
+      width: 30px;
+      height: 30px;
+      background: #fff0b3;
+      border-radius: 50%;
+      position: absolute;
+      top: 35px;
+      left: 35px;
+    }
+
+    @keyframes jatuh {
+      0% { top: -100px; transform: rotate(0deg); }
+      100% { top: 110vh; transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Bunga animasi -->
+  <div class="bunga">
+    <div class="kelopak" style="transform: rotate(0deg);"></div>
+    <div class="kelopak" style="transform: rotate(72deg);"></div>
+    <div class="kelopak" style="transform: rotate(144deg);"></div>
+    <div class="kelopak" style="transform: rotate(216deg);"></div>
+    <div class="kelopak" style="transform: rotate(288deg);"></div>
+    <div class="tengah"></div>
+  </div>
+  <div class="bunga">
+    <div class="kelopak" style="transform: rotate(0deg);"></div>
+    <div class="kelopak" style="transform: rotate(72deg);"></div>
+    <div class="kelopak" style="transform: rotate(144deg);"></div>
+    <div class="kelopak" style="transform: rotate(216deg);"></div>
+    <div class="kelopak" style="transform: rotate(288deg);"></div>
+    <div class="tengah"></div>
+  </div>
+
+  <header class="site-header">
+    <h1>AGNA KHOERUNNISA</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#pendidikan">Riwayat</a></li>
+      <li><a href="#skill">Skill</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#audio">Audio</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+      <li><a href="lat_css.html">CSS</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="profil">
+      <h2>Profil</h2>
+      <img src="img/Agna.jpeg" alt="Foto diri Agna Khoerunnisa" class="about-img">
+      <p>Haiii, perkenalkan saya Agna Khoerunnisa dari Rajapolah kota Tasikmalaya. Saat ini saya sedang menempuh pendidikan semester 1 di Universitas Mayasari Bakti kota Tasikmalaya, program studi Teknik Informatika.</p>
+    </section>
+
+    <section id="pendidikan">
+      <h2>Riwayat Pendidikan</h2>
+      <table>
+        <caption>Riwayat Pendidikan Agna Khoerunnisa</caption>
+        <thead>
+          <tr><th>Tahun</th><th>Keterangan</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><time datetime="2025">2025</time></td><td>Lulus SMKN Rajapolah</td></tr>
+          <tr><td colspan="2">Jurusan <abbr title="TKJ">Teknik Jaringan dan Komputer</abbr></td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2">Data diperbarui: <time datetime="2025-11-24">25 November 2025</time></td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+     <section id="skill" aria-labelledby="judul-keahlian">
+      <h2 id="judul-keahlian">Keahlian</h2>
+      <ul>
+        <li>Menggambar</li>
+        <li>Instalasi dan konfigurasi jaringan</li>
+        <li>Kerja sama tim</li>
+      </ul>
+    </section>
+
+    <section id="video">
+      <h2>Karya</h2>
+      <p></p>
+      <img width="320" src="img/ppg3.jpeg" alt="Karya">
+    </section>
+    <section id="video">
+      <h2>Video Projek</h2>
+      <if frame
+            src="https://www.youtube.com/watch?v=iA8lLwmtKQM"
+            title="Youtube-vidio"
+            frame></if>
+      <p></p>
+      <a href="https://www.youtube.com/watch?v=iA8lLwmtKQM" target="_blank">
+      <img src="https://img.youtube.com/vi/iA8lLwmtKQM/0.jpg"  width="320" height="180">
+  
+    </section>
+
+    <section id="audio">
+      <h2>Audio</h2>
+      <p></p>
+      <audio controls>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+      </audio>
+    </section>
+
+    <section id="kontak" aria-labelledby="judul-kontak">
+      <h2 id="judul-kontak">Form Kontak</h2>
+      <form aria-describedby="deskripsi-form" class="box-email">
+        <p id="deskripsi-form">Silakan isi formulir di bawah ini untuk menghubungi saya.</p>
+
+        <fieldset class="box-email">
+          <legend>Hubungi Saya</legend>
+
+          <label>Nama:<br>
+            <input type="text" name="nama" required minlength="3" maxlength="30">
+          </label><br><br>
+
+          <label>Email:<br>
+            <input type="email" name="email" required>
+          </label><br><br>
+
+          <label>Nomor HP:<br>
+            <input type="tel" name="nomor" required minlength="10" maxlength="15">
+          </label><br><br>
+
+          <label>Pesan:<br>
+            <textarea name="pesan" required minlength="5"></textarea>
+          </label><br><br>
+
+          <p>Jenis Kontak:</p>
+          <label><input type="radio" name="jenis" value="saran" required> Saran</label>
+          <label><input type="radio" name="jenis" value="pertanyaan"> Pertanyaan</label><br><br>
+
+          <label>
+            <input type="checkbox" name="setuju" required>
+            Saya menyetujui kebijakan privasi
+          </label><br><br>
+
+          <button type="submit">Kirim</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Belum paham itu wajar, yang penting jangan berhenti mencoba.
+</html>
